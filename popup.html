@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        font-family: sans-serif;
+        font-size: 15px;
+      }
+      .bookmark_lens {
+        width: 500px;
+        height: 100%;
+      }
+      .bookmark_link {
+        padding: 10px;
+        overflow: hidden;
+      }
+      .bookmark_list {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+      }
+      .bookmark_search {
+        width: 100%;
+        outline: none;
+        font-size: 18px;
+        border: none;
+        padding: 5px;
+        padding-left: 18px;
+        background-color: #f0f0f0;
+        border-radius: 15px;
+      }
+      .bookmark_search_has_input {
+        background-color: white;
+        border-bottom: 1px solid #dcdcdc;
+        border-radius: 0;
+      }
+      .highlighted_link {
+        background-color: #f0f0f0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bookmark_lens">
+      <input
+        type="search"
+        name="q"
+        class="bookmark_search"
+        aria-label="Search through site content"
+        height="50px"
+        autocomplete="off"
+        autofocus
+      />
+      <datalist class="bookmark_list"></datalist>
+    </div>
+    <!-- <div class="bookmark_list"></div> -->
+  </body>
+  <script src="popup.js"></script>
+</html>
