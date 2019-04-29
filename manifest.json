@@ -1,7 +1,7 @@
 {
   "name": "Bookmark Lens",
-  "version": "1.0",
-  "description": "Open your bookmarks with keyboard shortcut and intelligent search! Inspired by vscode cmd+p shortcut.",
+  "version": "1.0.0",
+  "description": "Open your bookmarks with keyboard shortcut and intelligent search!",
   "background": {
     "scripts": ["background.js"],
     "persistent": false
@@ -13,7 +13,7 @@
   "commands": {
     "_execute_browser_action": {
       "suggested_key": {
-        "default": "Ctrl+P",
+        "default": "Alt+P",
         "mac": "MacCtrl+P"
       }
     }
